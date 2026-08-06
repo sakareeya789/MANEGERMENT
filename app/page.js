@@ -821,6 +821,25 @@ function Outro() {
           </div>
         ))}
       </div>
+
+      <div style={{ marginTop: 36, padding: 24, background: COLORS.surface, border: `1px solid ${COLORS.border}`, borderRadius: 20 }}>
+        <div style={{ ...fontMono, color: COLORS.gold, fontSize: 12, letterSpacing: 2, marginBottom: 18 }}>จัดทำโดย</div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 18 }}>
+          {[
+            { name: "นายซาการียา ม่านแดงเห่", id: "69409010003", role: "ป.ตรี ปี 1 เทคโนโลยีสารสนเทศ", image: "/sakareeya.jpg" },
+            { name: "นายครรชิตพล เพ็งเอียด", id: "69409010003", role: "ป.ตรี ปี 1 เทคโนโลยีสารสนเทศ", image: "/khanchit.jpg" },
+          ].map((person) => (
+            <div key={person.name} style={{ display: "flex", alignItems: "center", gap: 14, padding: 18, background: COLORS.bg, border: `1px solid ${COLORS.border}`, borderRadius: 16 }}>
+              <img src={person.image} alt={person.name} style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `2px solid ${COLORS.gold}` }} />
+              <div>
+                <div style={{ ...fontDisplay, fontSize: 16, color: COLORS.text, fontWeight: 700 }}>{person.name}</div>
+                <div style={{ ...fontMono, color: COLORS.muted, fontSize: 12, margin: "6px 0 0" }}>{person.role}</div>
+                <div style={{ ...fontBody, color: COLORS.goldSoft, fontSize: 13, marginTop: 8 }}>{person.id}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
