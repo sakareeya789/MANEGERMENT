@@ -826,8 +826,8 @@ function Outro() {
         <div style={{ ...fontMono, color: COLORS.gold, fontSize: 12, letterSpacing: 2, marginBottom: 18 }}>จัดทำโดย</div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 18 }}>
           {[
-            { name: "นายซาการียา ม่านแดงเห่", id: "69409010003", role: "ป.ตรี ปี 1 เทคโนโลยีสารสนเทศ", image: "/sakareeya.jpg" },
-            { name: "นายครรชิตพล เพ็งเอียด", id: "69409010003", role: "ป.ตรี ปี 1 เทคโนโลยีสารสนเทศ", image: "/khanchit.jpg" },
+            { name: "นายซาการียา ม่านแดงเห่", id: "69409010003", role: "ป.ตรี ปี 1 เทคโนโลยีสารสนเทศ", image: "sakareeya.jpg" },
+            { name: "นายครรชิตพล เพ็งเอียด", id: "69409010003", role: "ป.ตรี ปี 1 เทคโนโลยีสารสนเทศ", image: "khanchit.jpg" },
           ].map((person) => (
             <div key={person.name} style={{ display: "flex", alignItems: "center", gap: 14, padding: 18, background: COLORS.bg, border: `1px solid ${COLORS.border}`, borderRadius: 16 }}>
               <img src={person.image} alt={person.name} style={{ width: 72, height: 72, borderRadius: "50%", objectFit: "cover", border: `2px solid ${COLORS.gold}` }} />
